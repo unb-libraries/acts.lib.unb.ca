@@ -1,0 +1,61 @@
+dockworker:
+  version: '6'
+  application:
+    name: ACTS - Atlantic Canada Theatre Site
+    uri: https://acts.lib.unb.ca
+    description: >
+      Atlantic Canada Theatre Site
+    topics:
+      - theatre
+      - research
+    identifiers:
+      id: acts.lib.unb.ca
+      slug: acts-lib-unb-ca
+      short_slug: acts
+      uuid: 3092
+    framework:
+      name: Drupal
+      version: 10
+      startup_finished_marker: '99_startup_sequence_complete'
+      endpoint:
+        name: http
+        port: 80
+        readiness_timeout: 15
+    license:
+      license: MIT
+      holder: University of New Brunswick Libraries
+    shell:
+      path: /bin/sh
+  endpoints:
+    env:
+      - dev
+      - prod
+    deployments:
+      acts-lib-unb-ca:
+        default: true
+        managed: true
+        name: acts-lib-unb-ca
+      drupal-mysql-lib-unb-ca:
+        managed: false
+        name: mysql
+      drupal-redis-lib-unb-ca:
+        managed: false
+        name: redis
+      drupal-solr-lib-unb-ca:
+        managed: false
+        name: solr
+  workflows:
+    vcs:
+      type: github
+      owner: unb-libraries
+      name: acts.lib.unb.ca
+    jira:
+      project_keys:
+        - COGS
+    image:
+      name: ghcr.io/unb-libraries/acts.lib.unb.ca
+      parent: ghcr.io/unb-libraries/drupal:11.x-1.x-unblib
+      repository: GitHub
+      push-branches:
+        - dev
+        - prod

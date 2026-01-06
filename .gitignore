@@ -1,0 +1,9 @@
+vendor
+/composer.lock
+tests/behat/features/bootstrap
+scripts/local
+
+.idea
+configuration/.htaccess
+
+*.swp
