@@ -4,7 +4,7 @@ FROM ghcr.io/unb-libraries/drupal:11.x-1.x-unblib
 ENV ADDITIONAL_OS_PACKAGES="postfix php-ldap php83-pecl-redis php83-xmlreader php-zip"
 ENV DRUPAL_SITE_ID="acts"
 ENV DRUPAL_SITE_URI="acts.lib.unb.ca"
-ENV DRUPAL_SITE_UUID=
+ENV DRUPAL_SITE_UUID=981986fa-f8f0-4dff-93a7-4b5996d5653a
 
 # Build application.
 COPY ./build/ /build/
