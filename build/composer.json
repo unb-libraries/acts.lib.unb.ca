@@ -85,9 +85,11 @@
     "drupal/core": "^11",
     "drupal/core-composer-scaffold": "^11",
     "drupal/core-recommended": "^11",
+    "drupal/facets": "^3",
     "drupal/google_analytics": "^4",
     "drupal/health_check": "^3",
     "drupal/redis": "^1",
+    "drupal/search_api": "^1",
     "drupal/simple_sitemap": "^4",
     "unb-libraries/composer-drupal-scaffold": "^11.x-dev"
   },

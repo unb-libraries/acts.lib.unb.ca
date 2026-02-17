@@ -1,7 +1,7 @@
 _core:
   default_config_hash: HlN7eAN2N4JIHsYv56V4E7sqC9bS609KwvGFjyD_mgk
 langcode: en
-uuid: '981986fa-f8f0-4dff-93a7-4b5996d5653a'
+uuid: 981986fa-f8f0-4dff-93a7-4b5996d5653a
 name: acts.lib.unb.ca
 mail: admin@example.com
 slogan: ''
