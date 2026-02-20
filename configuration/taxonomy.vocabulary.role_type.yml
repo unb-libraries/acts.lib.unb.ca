@@ -1,0 +1,9 @@
+uuid: 6a5676cb-b484-4fb2-b888-818b1194b212
+langcode: en
+status: true
+dependencies: {  }
+name: 'Role Type'
+vid: role_type
+description: null
+weight: 0
+new_revision: false
