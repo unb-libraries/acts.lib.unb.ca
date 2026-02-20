@@ -1,0 +1,29 @@
+uuid: aa25fa34-00e0-451f-bb1a-a08a2049e7a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_role
+    - node.type.event
+    - node.type.role
+id: node.event.field_event_role
+field_name: field_event_role
+entity_type: node
+bundle: event
+label: 'Event Role'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      role: role
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

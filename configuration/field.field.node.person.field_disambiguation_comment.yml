@@ -1,0 +1,19 @@
+uuid: 27f40850-6d6a-4492-8d11-10f7384ca300
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_disambiguation_comment
+    - node.type.person
+id: node.person.field_disambiguation_comment
+field_name: field_disambiguation_comment
+entity_type: node
+bundle: person
+label: 'Disambiguation Comment'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

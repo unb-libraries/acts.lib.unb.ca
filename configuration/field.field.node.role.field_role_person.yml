@@ -1,0 +1,29 @@
+uuid: 36f656c3-7d0e-4f49-9ce0-7288f25584e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_role_person
+    - node.type.person
+    - node.type.role
+id: node.role.field_role_person
+field_name: field_role_person
+entity_type: node
+bundle: role
+label: 'Role Person'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      person: person
+    sort:
+      field: field_title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

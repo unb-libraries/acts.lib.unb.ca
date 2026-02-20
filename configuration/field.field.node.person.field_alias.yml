@@ -1,0 +1,19 @@
+uuid: 614a1182-e136-4702-800e-744451a610aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_alias
+    - node.type.person
+id: node.person.field_alias
+field_name: field_alias
+entity_type: node
+bundle: person
+label: Alias
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

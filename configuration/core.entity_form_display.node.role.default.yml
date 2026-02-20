@@ -1,0 +1,69 @@
+uuid: 679bd9bc-1450-4783-b910-744d90c70e90
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.role.field_disambiguation_comment
+    - field.field.node.role.field_role_person
+    - field.field.node.role.field_role_type
+    - node.type.role
+id: node.role.default
+targetEntityType: node
+bundle: role
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_disambiguation_comment:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_role_person:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_role_type:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  promote: true
+  sticky: true
+  title: true

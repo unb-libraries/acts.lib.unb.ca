@@ -1,0 +1,47 @@
+uuid: 8f20d7e1-ac25-4686-84a3-fb3d9d198efc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.role.field_disambiguation_comment
+    - field.field.node.role.field_role_person
+    - field.field.node.role.field_role_type
+    - node.type.role
+  module:
+    - user
+id: node.role.default
+targetEntityType: node
+bundle: role
+mode: default
+content:
+  field_disambiguation_comment:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_role_person:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_role_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  search_api_excerpt: true
