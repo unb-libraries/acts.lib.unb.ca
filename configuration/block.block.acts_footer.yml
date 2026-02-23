@@ -1,0 +1,27 @@
+uuid: d762e1c4-d1d4-4a81-8cf8-4f56fbd82ab8
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - acts
+_core:
+  default_config_hash: q9-8JStlo3zLlFcK0DNhwpvM4Ila2dCvi-Lp_IX-uF8
+id: acts_footer
+theme: acts
+region: footer
+weight: -6
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: Footer
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

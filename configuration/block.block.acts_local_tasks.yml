@@ -1,0 +1,22 @@
+uuid: 361d7e91-7473-4256-a779-0de082fc3a45
+langcode: en
+status: true
+dependencies:
+  theme:
+    - acts
+_core:
+  default_config_hash: Bt9gkiZ2QDnWJojvJ42vPKA2L5g7HzmQXeEpHFko0oY
+id: acts_local_tasks
+theme: acts
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

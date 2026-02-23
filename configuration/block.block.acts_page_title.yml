@@ -1,0 +1,20 @@
+uuid: 6e86f505-5a6e-4217-9bb2-88af192d8538
+langcode: en
+status: true
+dependencies:
+  theme:
+    - acts
+_core:
+  default_config_hash: XR6lwvweECv2ue2hV3biJHGauiMhaNLOn8vkkptZnG8
+id: acts_page_title
+theme: acts
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

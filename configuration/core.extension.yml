@@ -30,4 +30,7 @@ theme:
   stark: 0
   claro: 0
   olivero: 0
+  stable9: 0
+  bootstrap5: 0
+  acts: 0
 profile: minimal

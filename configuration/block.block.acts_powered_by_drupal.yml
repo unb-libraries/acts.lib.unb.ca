@@ -1,0 +1,22 @@
+uuid: 45deae46-9bff-4c00-8ab2-e7d70987ac27
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - acts
+_core:
+  default_config_hash: HqqYB5Vq0uyaCtGPAE4qo9PnWbZ81MJa_cNGO8y_8e8
+id: acts_powered_by_drupal
+theme: acts
+region: footer
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

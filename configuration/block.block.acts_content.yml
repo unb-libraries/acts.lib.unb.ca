@@ -1,0 +1,22 @@
+uuid: cd3e84cb-2b01-4af6-95a3-4abf09c29adc
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - acts
+_core:
+  default_config_hash: ZRANVnxcVhUOKXHCebeVNmXl0-umk5j3wOBi-oRZBw4
+id: acts_content
+theme: acts
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

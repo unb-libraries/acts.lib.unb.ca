@@ -1,0 +1,20 @@
+uuid: c4635794-3d4c-4fec-b425-f5f099c8b5f4
+langcode: en
+status: true
+dependencies:
+  theme:
+    - acts
+_core:
+  default_config_hash: guYgi0kaH6kv9mORPbxoC-RApAEi7C5JSkMaPwtG8SE
+id: acts_local_actions
+theme: acts
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

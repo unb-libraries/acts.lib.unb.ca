@@ -1,0 +1,22 @@
+uuid: dc5786ff-4906-4a3e-a922-66740fe65318
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - acts
+_core:
+  default_config_hash: t7sxBXIg5A3rdRzG_pTjNNbV1NGkd1m7Jisvt4r6GLk
+id: acts_messages
+theme: acts
+region: content
+weight: -7
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

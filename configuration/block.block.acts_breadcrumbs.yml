@@ -1,0 +1,22 @@
+uuid: 24385f55-1857-452c-b231-8b9c282cd4f1
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - acts
+_core:
+  default_config_hash: nYKjrpLieaKW4TrjMWLfLZ8SY3Ndl2AURfN81VbrHpw
+id: acts_breadcrumbs
+theme: acts
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

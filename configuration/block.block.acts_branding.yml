@@ -1,0 +1,25 @@
+uuid: 388cdc23-0a5d-4a43-abee-a807f4347a0e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - acts
+_core:
+  default_config_hash: KguQoTiZzKTD8KNwofffd2C4qEy2Pa0bQwoSJjqu0M4
+id: acts_branding
+theme: acts
+region: nav_branding
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }
