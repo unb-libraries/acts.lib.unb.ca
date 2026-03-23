@@ -1,0 +1,37 @@
+uuid: 6dfe7ab9-34cf-4294-b52f-12ae742e2379
+langcode: en
+status: true
+dependencies:
+  module:
+    - editor
+name: 'ACTS Format'
+format: acts_format
+weight: 0
+filters:
+  editor_file_reference:
+    id: editor_file_reference
+    provider: editor
+    status: true
+    weight: 0
+    settings: {  }
+  filter_align:
+    id: filter_align
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  filter_caption:
+    id: filter_caption
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: -10
+    settings:
+      allowed_html: '<br> <p> <h2> <h3> <h4> <h5> <h6> <strong> <em>'
+      filter_html_help: true
+      filter_html_nofollow: false
