@@ -51,7 +51,7 @@ dockworker:
       name: acts.lib.unb.ca
     jira:
       project_keys:
-        - COGS
+        - ACTS
     image:
       name: ghcr.io/unb-libraries/acts.lib.unb.ca
       parent: ghcr.io/unb-libraries/drupal:11.x-1.x-unblib
