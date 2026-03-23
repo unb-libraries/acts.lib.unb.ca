@@ -1,0 +1,14 @@
+uuid: 08b78dbc-974f-4449-8f7c-e3beb852a1ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.acts_format
+  module:
+    - filter
+id: acts_editor
+label: 'ACTS Editor'
+weight: 2
+is_admin: false
+permissions:
+  - 'use text format acts_format'

@@ -1,0 +1,14 @@
+uuid: 2c9126ea-dbc9-42ae-81c0-4973e870ba9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.acts_editor
+  module:
+    - user
+id: user_remove_role_action.acts_editor
+label: 'Remove the ACTS Editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: acts_editor

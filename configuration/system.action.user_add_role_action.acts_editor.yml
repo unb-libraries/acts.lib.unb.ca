@@ -1,0 +1,14 @@
+uuid: 4ffc2bdd-5481-4611-b3a8-48f0208f0dab
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.acts_editor
+  module:
+    - user
+id: user_add_role_action.acts_editor
+label: 'Add the ACTS Editor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: acts_editor
