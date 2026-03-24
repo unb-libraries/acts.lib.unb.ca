@@ -88,6 +88,7 @@
     "drupal/facets": "^3",
     "drupal/google_analytics": "^4",
     "drupal/health_check": "^3",
+    "drupal/override_node_options": "^2",
     "drupal/redis": "^1",
     "drupal/search_api": "^1",
     "drupal/simple_sitemap": "^4",
