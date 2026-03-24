@@ -20,15 +20,19 @@ module:
   node: 0
   override_node_options: 0
   page_cache: 0
+  path: 0
   path_alias: 0
   redis: 0
   search_api: 0
+  simple_sitemap: 0
   system: 0
   taxonomy: 0
   text: 0
+  token: 0
   toolbar: 0
   update: 0
   user: 0
+  pathauto: 1
   minimal: 1000
 theme:
   stark: 0
