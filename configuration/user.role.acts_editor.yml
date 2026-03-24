@@ -4,11 +4,70 @@ status: true
 dependencies:
   config:
     - filter.format.acts_format
+    - node.type.company
+    - node.type.event
+    - node.type.page
+    - node.type.person
+    - node.type.role
+    - node.type.theatre
+    - node.type.work
   module:
     - filter
+    - node
+    - override_node_options
+    - path
+    - system
+    - toolbar
 id: acts_editor
 label: 'ACTS Editor'
 weight: 2
 is_admin: false
 permissions:
+  - 'access content overview'
+  - 'access toolbar'
+  - 'create company content'
+  - 'create event content'
+  - 'create page content'
+  - 'create person content'
+  - 'create role content'
+  - 'create theatre content'
+  - 'create url aliases'
+  - 'create work content'
+  - 'delete any company content'
+  - 'delete any event content'
+  - 'delete any page content'
+  - 'delete any person content'
+  - 'delete any role content'
+  - 'delete any theatre content'
+  - 'delete any work content'
+  - 'edit any company content'
+  - 'edit any event content'
+  - 'edit any page content'
+  - 'edit any person content'
+  - 'edit any role content'
+  - 'edit any theatre content'
+  - 'edit any work content'
+  - 'enter company revision log entry'
+  - 'enter event revision log entry'
+  - 'enter page revision log entry'
+  - 'enter person revision log entry'
+  - 'enter role revision log entry'
+  - 'enter theatre revision log entry'
+  - 'enter work revision log entry'
+  - 'revert company revisions'
+  - 'revert event revisions'
+  - 'revert page revisions'
+  - 'revert person revisions'
+  - 'revert role revisions'
+  - 'revert theatre revisions'
+  - 'revert work revisions'
   - 'use text format acts_format'
+  - 'view company revisions'
+  - 'view event revisions'
+  - 'view own unpublished content'
+  - 'view page revisions'
+  - 'view person revisions'
+  - 'view role revisions'
+  - 'view the administration theme'
+  - 'view theatre revisions'
+  - 'view work revisions'
