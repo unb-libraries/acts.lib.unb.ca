@@ -11,10 +11,35 @@ editor: ckeditor5
 settings:
   toolbar:
     items:
+      - sourceEditing
+      - undo
+      - redo
+      - '|'
       - heading
+      - removeFormat
       - bold
       - italic
+      - '|'
+      - alignment
+      - '|'
+      - insertTable
+      - bulletedList
+      - numberedList
+      - outdent
+      - indent
+      - '|'
+      - fullscreen
+      - '|'
+      - specialCharacters
+      - horizontalLine
+      - blockQuote
   plugins:
+    ckeditor5_alignment:
+      enabled_alignments:
+        - center
+        - justify
+        - left
+        - right
     ckeditor5_heading:
       enabled_headings:
         - heading2
@@ -22,5 +47,13 @@ settings:
         - heading4
         - heading5
         - heading6
+    ckeditor5_list:
+      properties:
+        reversed: false
+        startIndex: true
+        styles: true
+      multiBlock: true
+    ckeditor5_sourceEditing:
+      allowed_tags: {  }
 image_upload:
   status: false

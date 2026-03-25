@@ -82,6 +82,7 @@
   ],
   "require": {
     "drupal/bootstrap5": "^4",
+    "drupal/ckeditor5_plugin_pack": "^1",
     "drupal/core": "^11",
     "drupal/core-composer-scaffold": "^11",
     "drupal/core-recommended": "^11",
