@@ -1,0 +1,16 @@
+uuid: aed3a44b-b710-47e0-b648-026c02d984d0
+langcode: en
+status: true
+dependencies: {  }
+id: openstreetmap
+label: OpenStreetMap
+plugin: openstreetmap
+configuration:
+  throttle:
+    period: 2
+    limit: 1
+  geocoder:
+    locale: ''
+  rootUrl: 'https://nominatim.openstreetmap.org'
+  userAgent: 'UNB Libraries'
+  referer: 'https://acts.lib.unb.ca'

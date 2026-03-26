@@ -97,7 +97,9 @@
     "drupal/redis": "^1",
     "drupal/search_api": "^1",
     "drupal/simple_sitemap": "^4",
-    "unb-libraries/composer-drupal-scaffold": "^11.x-dev"
+    "geocoder-php/nominatim-provider": "^5.8",
+    "unb-libraries/composer-drupal-scaffold": "^11.x-dev",
+    "willdurand/geocoder": "^5"
   },
   "require-dev": {
     "unb-libraries/drupal-development-libraries": "^11.x-dev"

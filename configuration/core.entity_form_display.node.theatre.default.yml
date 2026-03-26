@@ -6,9 +6,12 @@ dependencies:
     - field.field.node.theatre.field_alias
     - field.field.node.theatre.field_annotation
     - field.field.node.theatre.field_disambiguation_comment
-    - field.field.node.theatre.field_name
+    - field.field.node.theatre.field_geolocation
+    - field.field.node.theatre.field_location
     - node.type.theatre
   module:
+    - address
+    - geofield
     - path
     - text
 id: node.theatre.default
@@ -46,13 +49,19 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_name:
-    type: string_textfield
-    weight: 121
+  field_geolocation:
+    type: geofield_latlon
+    weight: 123
     region: content
     settings:
-      size: 60
-      placeholder: ''
+      html5_geolocation: false
+    third_party_settings: {  }
+  field_location:
+    type: address_default
+    weight: 122
+    region: content
+    settings:
+      wrapper_type: fieldset
     third_party_settings: {  }
   path:
     type: path
