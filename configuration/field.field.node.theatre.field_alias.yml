@@ -1,0 +1,19 @@
+uuid: 18c64f38-6fc8-4ec3-bc5d-d6ba0087cc3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_alias
+    - node.type.theatre
+id: node.theatre.field_alias
+field_name: field_alias
+entity_type: node
+bundle: theatre
+label: Alias
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

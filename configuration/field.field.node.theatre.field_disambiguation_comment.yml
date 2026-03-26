@@ -1,0 +1,19 @@
+uuid: 9df58f91-8a01-4267-ae52-c35e5ffafae6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_disambiguation_comment
+    - node.type.theatre
+id: node.theatre.field_disambiguation_comment
+field_name: field_disambiguation_comment
+entity_type: node
+bundle: theatre
+label: 'Disambiguation Comment'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
