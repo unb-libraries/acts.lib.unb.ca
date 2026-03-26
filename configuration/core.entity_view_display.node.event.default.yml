@@ -3,16 +3,29 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.event.field_annotation
     - field.field.node.event.field_event_role
     - field.field.node.event.field_event_type
+    - field.field.node.event.field_geolocation
+    - field.field.node.event.field_location
     - node.type.event
   module:
+    - address
+    - geofield
+    - text
     - user
 id: node.event.default
 targetEntityType: node
 bundle: event
 mode: default
 content:
+  field_annotation:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
+    region: content
   field_event_role:
     type: entity_reference_label
     label: above
@@ -28,6 +41,22 @@ content:
       link: true
     third_party_settings: {  }
     weight: 102
+    region: content
+  field_geolocation:
+    type: geofield_default
+    label: above
+    settings:
+      output_format: wkt
+      output_escape: true
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_location:
+    type: address_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 107
     region: content
   links:
     settings: {  }

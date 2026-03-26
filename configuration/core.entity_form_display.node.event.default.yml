@@ -3,9 +3,17 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.event.field_annotation
     - field.field.node.event.field_event_role
     - field.field.node.event.field_event_type
+    - field.field.node.event.field_geolocation
+    - field.field.node.event.field_location
     - node.type.event
+  module:
+    - address
+    - geofield
+    - path
+    - text
 id: node.event.default
 targetEntityType: node
 bundle: event
@@ -16,6 +24,14 @@ content:
     weight: 4
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_annotation:
+    type: text_textarea
+    weight: 5
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
     third_party_settings: {  }
   field_event_role:
     type: entity_reference_autocomplete
@@ -36,6 +52,31 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_geolocation:
+    type: geofield_latlon
+    weight: 123
+    region: content
+    settings:
+      html5_geolocation: false
+    third_party_settings: {  }
+  field_location:
+    type: address_default
+    weight: 122
+    region: content
+    settings:
+      wrapper_type: fieldset
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  simple_sitemap:
+    weight: 10
+    region: content
+    settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox

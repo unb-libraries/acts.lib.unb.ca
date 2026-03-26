@@ -1,0 +1,24 @@
+uuid: c49dc8c4-cbca-4cdd-8951-7e989b08e1c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_annotation
+    - filter.format.acts_format
+    - node.type.event
+  module:
+    - text
+id: node.event.field_annotation
+field_name: field_annotation
+entity_type: node
+bundle: event
+label: Annotation
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - acts_format
+field_type: text_long
