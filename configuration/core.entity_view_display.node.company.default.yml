@@ -6,9 +6,12 @@ dependencies:
     - field.field.node.company.field_alias
     - field.field.node.company.field_annotation
     - field.field.node.company.field_disambiguation_comment
-    - field.field.node.company.field_name
+    - field.field.node.company.field_geolocation
+    - field.field.node.company.field_location
     - node.type.company
   module:
+    - address
+    - geofield
     - text
     - user
 id: node.company.default
@@ -39,13 +42,21 @@ content:
     third_party_settings: {  }
     weight: 104
     region: content
-  field_name:
-    type: string
+  field_geolocation:
+    type: geofield_default
     label: above
     settings:
-      link_to_entity: false
+      output_format: wkt
+      output_escape: true
     third_party_settings: {  }
-    weight: 106
+    weight: 108
+    region: content
+  field_location:
+    type: address_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 107
     region: content
   links:
     settings: {  }
