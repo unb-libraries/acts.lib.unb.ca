@@ -1,0 +1,19 @@
+uuid: ee4df026-c005-4862-8f20-a696804d4b0d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_disambiguation_comment
+    - node.type.company
+id: node.company.field_disambiguation_comment
+field_name: field_disambiguation_comment
+entity_type: node
+bundle: company
+label: 'Disambiguation Comment'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

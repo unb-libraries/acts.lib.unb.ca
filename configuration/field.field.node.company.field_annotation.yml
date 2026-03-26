@@ -1,0 +1,24 @@
+uuid: fcafcfc4-0ef0-49bd-a8ce-ff66044b50a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_annotation
+    - filter.format.acts_format
+    - node.type.company
+  module:
+    - text
+id: node.company.field_annotation
+field_name: field_annotation
+entity_type: node
+bundle: company
+label: Annotation
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - acts_format
+field_type: text_long

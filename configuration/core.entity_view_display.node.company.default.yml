@@ -1,0 +1,56 @@
+uuid: 03808760-3c87-40e5-93e6-88d128daaa2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.company.field_alias
+    - field.field.node.company.field_annotation
+    - field.field.node.company.field_disambiguation_comment
+    - field.field.node.company.field_name
+    - node.type.company
+  module:
+    - text
+    - user
+id: node.company.default
+targetEntityType: node
+bundle: company
+mode: default
+content:
+  field_alias:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_annotation:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_disambiguation_comment:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  search_api_excerpt: true
