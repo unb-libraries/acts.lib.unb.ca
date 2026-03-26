@@ -1,0 +1,29 @@
+uuid: 67082766-1250-49a6-a528-ce2325c4b793
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_work_type
+    - node.type.work
+    - taxonomy.vocabulary.work_type
+id: node.work.field_work_type
+field_name: field_work_type
+entity_type: node
+bundle: work
+label: 'Work Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      work_type: work_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
