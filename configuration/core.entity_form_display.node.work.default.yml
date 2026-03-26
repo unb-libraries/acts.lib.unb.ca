@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.field.node.work.field_annotation
     - field.field.node.work.field_disambiguation_comment
-    - field.field.node.work.field_name
+    - field.field.node.work.field_work_theme
     - field.field.node.work.field_work_type
     - node.type.work
   module:
@@ -38,11 +38,13 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_name:
-    type: string_textfield
-    weight: 121
+  field_work_theme:
+    type: entity_reference_autocomplete
+    weight: 123
     region: content
     settings:
+      match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }

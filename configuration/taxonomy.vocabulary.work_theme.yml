@@ -1,0 +1,9 @@
+uuid: 87528ad2-abaf-4ebe-be65-c978952372b3
+langcode: en
+status: true
+dependencies: {  }
+name: 'Work Theme'
+vid: work_theme
+description: null
+weight: 0
+new_revision: false

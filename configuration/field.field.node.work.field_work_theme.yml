@@ -1,0 +1,29 @@
+uuid: c3ec7689-caf0-48d9-bea1-12ad1223f259
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_work_theme
+    - node.type.work
+    - taxonomy.vocabulary.work_theme
+id: node.work.field_work_theme
+field_name: field_work_theme
+entity_type: node
+bundle: work
+label: 'Work Theme'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      work_theme: work_theme
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
