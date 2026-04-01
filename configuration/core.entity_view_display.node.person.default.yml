@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.person.field_disambiguation_comment
     - field.field.node.person.field_first_name
     - field.field.node.person.field_last_name
+    - field.field.node.person.field_nationality
     - field.field.node.person.field_title
     - node.type.person
   module:
@@ -56,6 +57,14 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 102
+    region: content
+  field_nationality:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 107
     region: content
   field_title:
     type: string

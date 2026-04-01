@@ -8,9 +8,11 @@ dependencies:
     - field.field.node.person.field_disambiguation_comment
     - field.field.node.person.field_first_name
     - field.field.node.person.field_last_name
+    - field.field.node.person.field_nationality
     - field.field.node.person.field_title
     - node.type.person
   module:
+    - path
     - text
 id: node.person.default
 targetEntityType: node
@@ -63,6 +65,14 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_nationality:
+    type: string_textfield
+    weight: 31
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_title:
     type: string_textfield
     weight: 2
@@ -70,6 +80,17 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  simple_sitemap:
+    weight: 10
+    region: content
+    settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
