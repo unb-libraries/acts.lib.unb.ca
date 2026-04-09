@@ -1,31 +1,49 @@
 acts.settings:
-  type: config_object
+  type: bootstrap5.settings
   label: 'ACTS theme settings'
   mapping:
-    b5_body_schema:
+    features:
+      type: mapping
+      label: 'Theme features'
+      mapping:
+        node_user_picture:
+          type: boolean
+          label: 'Display author picture on nodes'
+        comment_user_picture:
+          type: boolean
+          label: 'Display user pictures in comments'
+        comment_user_verification:
+          type: boolean
+          label: 'Enable comment user verification'
+        favicon:
+          type: boolean
+          label: 'Use favicon'
+
+    logo:
+      type: mapping
+      label: 'Logo settings'
+      mapping:
+        use_default:
+          type: boolean
+          label: 'Use the default logo'
+        path:
+          type: string
+          label: 'Custom logo path'
+
+    favicon:
+      type: mapping
+      label: 'Favicon settings'
+      mapping:
+        use_default:
+          type: boolean
+          label: 'Use the default favicon'
+
+    subtheme_folder:
       type: string
-      label: 'Body theme'
-    b5_body_bg_schema:
+      label: 'Subtheme folder path'
+    subtheme_name:
       type: string
-      label: 'Body background'
-    b5_navbar_schema:
+      label: 'Subtheme name'
+    subtheme_machine_name:
       type: string
-      label: 'Navbar theme'
-    b5_navbar_bg_schema:
-      type: string
-      label: 'Navbar background'
-    b5_footer_schema:
-      type: string
-      label: 'Footer theme'
-    b5_footer_bg_schema:
-      type: string
-      label: 'Footer background'
-    b5_top_container:
-      type: string
-      label: 'Website container type'
-    b5_top_container_config:
-      type: string
-      label: 'Website container type configuration'
-    b5_theme_mode:
-      type: string
-      label: 'Theme mode'
+      label: 'Subtheme machine name'
