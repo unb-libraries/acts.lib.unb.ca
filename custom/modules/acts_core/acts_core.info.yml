@@ -1,0 +1,7 @@
+name: 'ACTS Core'
+type: module
+description: 'ACTS Core Functions'
+core_version_requirement: ^11
+
+dependencies:
+  - drupal:node
