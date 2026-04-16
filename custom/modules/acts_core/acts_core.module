@@ -6,6 +6,7 @@
  */
 
 use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Form\FormStateInterface;
 
 /**
  * Implements hook_node_presave.
@@ -19,5 +20,24 @@ function acts_core_node_presave(EntityInterface $node) {
       $title[] = "(${comment})";
     }
     $node->setTitle(trim(implode(' ', $title)));
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function acts_core_form_node_person_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $form['#validate'][] = '_validate_person_form';
+}
+
+/**
+ * Custom validation for a person entity.
+ */
+function _validate_person_form(&$form, FormStateInterface $form_state) {
+  $first_name = $form_state->getValue('field_first_name')[0]['value'];
+  $last_name = $form_state->getValue('field_last_name')[0]['value'];
+
+  if (empty($first_name) && empty($last_name)) {
+    $form_state->setErrorByName('', t('Either a first name or last name must be entered.'));
   }
 }
