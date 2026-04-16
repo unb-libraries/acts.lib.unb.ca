@@ -17,7 +17,7 @@ function acts_core_node_presave(EntityInterface $node) {
     $title[] = $node->get('field_first_name')->value;
     $title[] = $node->get('field_last_name')->value;
     if ($comment = $node->get('field_disambiguation_comment')->value) {
-      $title[] = "(${comment})";
+      $title[] = "({$comment})";
     }
     $node->setTitle(trim(implode(' ', $title)));
   }
