@@ -21,7 +21,7 @@ function acts_core_node_presave(EntityInterface $node) {
     }
     $node->setTitle(trim(implode(' ', $title)));
   }
-  elseif ($node->bundle() == 'company') {
+  elseif ($node->bundle() == 'company' || $node->bundle() == 'theatre') {
     $title[] = $node->get('field_title')->value;
     if ($comment = $node->get('field_disambiguation_comment')->value) {
       $title[] = "({$comment})";

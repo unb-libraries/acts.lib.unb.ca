@@ -1,17 +1,18 @@
-uuid: 4cebcfb2-d1c5-4f76-90b3-05fa2d9afaa0
+uuid: f4ae7b1d-401f-475b-a079-d1c3c01e5ca3
 langcode: en
 status: true
 dependencies:
   config:
+    - field.storage.node.field_title
     - node.type.theatre
-id: node.theatre.title
-field_name: title
+id: node.theatre.field_title
+field_name: field_title
 entity_type: node
 bundle: theatre
-label: Title
+label: Name
 description: ''
 required: true
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
