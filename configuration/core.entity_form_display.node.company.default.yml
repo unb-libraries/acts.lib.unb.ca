@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.company.field_disambiguation_comment
     - field.field.node.company.field_geolocation
     - field.field.node.company.field_location
+    - field.field.node.company.field_title
     - node.type.company
   module:
     - address
@@ -21,13 +22,13 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
   field_alias:
     type: string_textfield
-    weight: 4
+    weight: 3
     region: content
     settings:
       size: 60
@@ -43,7 +44,7 @@ content:
     third_party_settings: {  }
   field_disambiguation_comment:
     type: string_textfield
-    weight: 3
+    weight: 1
     region: content
     settings:
       size: 60
@@ -51,47 +52,47 @@ content:
     third_party_settings: {  }
   field_geolocation:
     type: geofield_latlon
-    weight: 123
+    weight: 10
     region: content
     settings:
       html5_geolocation: false
     third_party_settings: {  }
   field_location:
     type: address_default
-    weight: 122
+    weight: 2
     region: content
     settings:
       wrapper_type: fieldset
     third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  simple_sitemap:
-    weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  status:
-    type: boolean_checkbox
-    weight: 120
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
-  title:
+  field_title:
     type: string_textfield
-    weight: -5
+    weight: 0
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  path:
+    type: path
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  simple_sitemap:
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 9
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 4
     region: content
     settings:
       match_operator: CONTAINS
@@ -102,3 +103,4 @@ content:
 hidden:
   promote: true
   sticky: true
+  title: true
