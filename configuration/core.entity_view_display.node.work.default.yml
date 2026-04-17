@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.work.field_annotation
     - field.field.node.work.field_disambiguation_comment
+    - field.field.node.work.field_title
     - field.field.node.work.field_work_theme
     - field.field.node.work.field_work_type
     - node.type.work
@@ -30,6 +31,14 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 104
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
     region: content
   field_work_theme:
     type: entity_reference_label
