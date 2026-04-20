@@ -1,0 +1,22 @@
+uuid: d67f2ad6-5408-4309-bb62-9b4e2fe6e92b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: theatre
+label: Theatre
+type: 'canonical_entities:node'
+pattern: '/theatre/[node:title]'
+selection_criteria:
+  988dfa24-7bdd-4f72-b435-6ce1aada848d:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 988dfa24-7bdd-4f72-b435-6ce1aada848d
+    context_mapping:
+      node: node
+    bundles:
+      theatre: theatre
+selection_logic: and
+weight: -5
+relationships: {  }
