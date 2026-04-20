@@ -13,7 +13,6 @@ dependencies:
     - node.type.theatre
   module:
     - address
-    - geofield
     - path
     - text
 id: node.theatre.default
@@ -23,13 +22,13 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 6
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
   field_alias:
     type: string_textfield
-    weight: 2
+    weight: 3
     region: content
     settings:
       size: 60
@@ -37,7 +36,7 @@ content:
     third_party_settings: {  }
   field_annotation:
     type: text_textarea
-    weight: 4
+    weight: 5
     region: content
     settings:
       rows: 5
@@ -53,7 +52,7 @@ content:
     third_party_settings: {  }
   field_event_role:
     type: entity_reference_autocomplete
-    weight: 3
+    weight: 4
     region: content
     settings:
       match_operator: CONTAINS
@@ -61,16 +60,9 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_geolocation:
-    type: geofield_latlon
-    weight: 11
-    region: content
-    settings:
-      html5_geolocation: false
-    third_party_settings: {  }
   field_location:
     type: address_default
-    weight: 10
+    weight: 2
     region: content
     settings:
       wrapper_type: fieldset
@@ -85,25 +77,25 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 8
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
   simple_sitemap:
-    weight: 7
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 9
+    weight: 10
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 6
     region: content
     settings:
       match_operator: CONTAINS
@@ -112,6 +104,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
 hidden:
+  field_geolocation: true
   promote: true
   sticky: true
   title: true
