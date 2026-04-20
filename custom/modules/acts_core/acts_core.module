@@ -28,6 +28,14 @@ function acts_core_node_presave(EntityInterface $node) {
     }
     $node->setTitle(trim(implode(' ', $title)));
   }
+  elseif ($node->bundle() == 'role') {
+    $title[] = $node->get('field_role_person')->entity->getTitle();
+    $title[] = $node->get('field_role_type')->entity->label();
+    if ($comment = $node->get('field_disambiguation_comment')->value) {
+      $title[] = "({$comment})";
+    }
+    $node->setTitle(trim(implode(' ', $title)));
+  }
 }
 
 /**
