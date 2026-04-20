@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.work.field_annotation
     - field.field.node.work.field_disambiguation_comment
+    - field.field.node.work.field_event_role
     - field.field.node.work.field_title
     - field.field.node.work.field_work_theme
     - field.field.node.work.field_work_type
@@ -19,7 +20,7 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 4
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -39,6 +40,16 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_event_role:
+    type: entity_reference_autocomplete
+    weight: 2
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_title:
     type: string_textfield
     weight: 0
@@ -49,7 +60,7 @@ content:
     third_party_settings: {  }
   field_work_theme:
     type: entity_reference_autocomplete
-    weight: 9
+    weight: 10
     region: content
     settings:
       match_operator: CONTAINS
@@ -59,7 +70,7 @@ content:
     third_party_settings: {  }
   field_work_type:
     type: entity_reference_autocomplete
-    weight: 8
+    weight: 9
     region: content
     settings:
       match_operator: CONTAINS
@@ -69,25 +80,25 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 6
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
   simple_sitemap:
-    weight: 5
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 7
+    weight: 8
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 2
+    weight: 4
     region: content
     settings:
       match_operator: CONTAINS

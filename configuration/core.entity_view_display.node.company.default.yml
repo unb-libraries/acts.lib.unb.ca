@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.company.field_alias
     - field.field.node.company.field_annotation
     - field.field.node.company.field_disambiguation_comment
+    - field.field.node.company.field_event_role
     - field.field.node.company.field_geolocation
     - field.field.node.company.field_location
     - field.field.node.company.field_title
@@ -42,6 +43,14 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 104
+    region: content
+  field_event_role:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
     region: content
   field_geolocation:
     type: geofield_default

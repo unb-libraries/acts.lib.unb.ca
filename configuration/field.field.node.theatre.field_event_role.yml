@@ -1,0 +1,29 @@
+uuid: fab66a79-8387-4c8a-893d-33e18d7be8e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_role
+    - node.type.role
+    - node.type.theatre
+id: node.theatre.field_event_role
+field_name: field_event_role
+entity_type: node
+bundle: theatre
+label: 'Theatre Role'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      role: role
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.theatre.field_alias
     - field.field.node.theatre.field_annotation
     - field.field.node.theatre.field_disambiguation_comment
+    - field.field.node.theatre.field_event_role
     - field.field.node.theatre.field_geolocation
     - field.field.node.theatre.field_location
     - field.field.node.theatre.field_title
@@ -22,7 +23,7 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 5
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -50,16 +51,26 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_event_role:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_geolocation:
     type: geofield_latlon
-    weight: 10
+    weight: 11
     region: content
     settings:
       html5_geolocation: false
     third_party_settings: {  }
   field_location:
     type: address_default
-    weight: 9
+    weight: 10
     region: content
     settings:
       wrapper_type: fieldset
@@ -74,25 +85,25 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 7
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
   simple_sitemap:
-    weight: 6
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 8
+    weight: 9
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 3
+    weight: 5
     region: content
     settings:
       match_operator: CONTAINS
