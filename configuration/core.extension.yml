@@ -8,6 +8,8 @@ module:
   ckeditor5: 0
   ckeditor5_plugin_pack: 0
   ckeditor5_plugin_pack_fullscreen: 0
+  datetime: 0
+  datetime_range: 0
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
@@ -22,6 +24,7 @@ module:
   geocoder_geofield: 0
   geofield: 0
   health_check: 0
+  image: 0
   inline_entity_form: 0
   link: 0
   menu_link_content: 0
