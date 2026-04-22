@@ -4,7 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.node.event.field_annotation
+    - field.field.node.event.field_event_date
     - field.field.node.event.field_event_date_type
+    - field.field.node.event.field_event_display_date
     - field.field.node.event.field_event_role
     - field.field.node.event.field_event_search_date
     - field.field.node.event.field_event_sort_date
@@ -15,6 +17,7 @@ dependencies:
   module:
     - address
     - datetime
+    - datetime_range
     - path
     - text
 id: node.event.default
@@ -36,11 +39,25 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
+  field_event_date:
+    type: daterange_default
+    weight: 31
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_event_date_type:
     type: options_select
     weight: 29
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_event_display_date:
+    type: string_textfield
+    weight: 30
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_event_role:
     type: entity_reference_autocomplete

@@ -1,0 +1,19 @@
+uuid: 4b871d87-1b5e-4918-ae18-1eda6b1ec1e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_display_date
+    - node.type.event
+id: node.event.field_event_display_date
+field_name: field_event_display_date
+entity_type: node
+bundle: event
+label: 'Event Display Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
