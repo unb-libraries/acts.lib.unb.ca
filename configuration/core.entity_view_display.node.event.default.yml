@@ -4,14 +4,19 @@ status: true
 dependencies:
   config:
     - field.field.node.event.field_annotation
+    - field.field.node.event.field_event_date_type
     - field.field.node.event.field_event_role
+    - field.field.node.event.field_event_search_date
+    - field.field.node.event.field_event_sort_date
     - field.field.node.event.field_event_type
     - field.field.node.event.field_geolocation
     - field.field.node.event.field_location
     - node.type.event
   module:
     - address
+    - datetime
     - geofield
+    - options
     - text
     - user
 id: node.event.default
@@ -26,6 +31,13 @@ content:
     third_party_settings: {  }
     weight: 106
     region: content
+  field_event_date_type:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 112
+    region: content
   field_event_role:
     type: entity_reference_label
     label: above
@@ -33,6 +45,24 @@ content:
       link: true
     third_party_settings: {  }
     weight: 101
+    region: content
+  field_event_search_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  field_event_sort_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 111
     region: content
   field_event_type:
     type: entity_reference_label
