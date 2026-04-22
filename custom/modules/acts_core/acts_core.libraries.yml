@@ -1,0 +1,6 @@
+eventform:
+  js:
+    js/event-form.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal

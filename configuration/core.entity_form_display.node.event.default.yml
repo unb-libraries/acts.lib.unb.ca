@@ -16,6 +16,7 @@ dependencies:
     - node.type.event
   module:
     - address
+    - conditional_fields
     - datetime_range
     - field_group
     - path
@@ -64,7 +65,28 @@ content:
     weight: 13
     region: content
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      conditional_fields:
+        df4d7d4a-3db5-4f1f-b02d-408863e11fcd:
+          entity_type: node
+          bundle: event
+          dependee: field_event_date_type
+          settings:
+            state: visible
+            reset: false
+            condition: value
+            grouping: AND
+            values_set: 3
+            value: ''
+            values: "exact\r\napproximate"
+            value_form: {  }
+            effect: slide
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '200'
+            selector: ''
   field_event_date_type:
     type: options_select
     weight: 11
@@ -78,7 +100,48 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings:
+      conditional_fields:
+        9fd416ca-e358-4a24-83f6-294dfac8a3b8:
+          entity_type: node
+          bundle: event
+          dependee: field_event_date_type
+          settings:
+            state: visible
+            reset: false
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: approximate
+            effect: slide
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '200'
+            selector: ''
+        abfc5fc1-c581-414d-8540-b0a6b324ee04:
+          entity_type: node
+          bundle: event
+          dependee: field_event_date_type
+          settings:
+            state: required
+            reset: false
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: approximate
+            effect: show
+            effect_options: {  }
+            selector: ''
   field_event_role:
     type: entity_reference_autocomplete
     weight: 3
@@ -106,6 +169,12 @@ content:
     settings:
       wrapper_type: fieldset
     third_party_settings: {  }
+  group_event_date:
+    weight: 26
+    region: content
+    settings: {  }
+    third_party_settings:
+      conditional_fields: {  }
   path:
     type: path
     weight: 10
