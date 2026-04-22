@@ -16,10 +16,30 @@ dependencies:
     - node.type.event
   module:
     - address
-    - datetime
     - datetime_range
+    - field_group
     - path
     - text
+third_party_settings:
+  field_group:
+    group_event_date:
+      children:
+        - field_event_date_type
+        - field_event_display_date
+        - field_event_date
+      label: 'Event Date'
+      region: content
+      parent_name: ''
+      weight: 2
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: true
+        id: ''
+        label_as_html: false
+        open: true
+        description: ''
+        required_fields: true
 id: node.event.default
 targetEntityType: node
 bundle: event
@@ -27,13 +47,13 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 6
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
   field_annotation:
     type: text_textarea
-    weight: 4
+    weight: 5
     region: content
     settings:
       rows: 5
@@ -41,19 +61,19 @@ content:
     third_party_settings: {  }
   field_event_date:
     type: daterange_default
-    weight: 31
+    weight: 13
     region: content
     settings: {  }
     third_party_settings: {  }
   field_event_date_type:
     type: options_select
-    weight: 29
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }
   field_event_display_date:
     type: string_textfield
-    weight: 30
+    weight: 12
     region: content
     settings:
       size: 60
@@ -61,25 +81,13 @@ content:
     third_party_settings: {  }
   field_event_role:
     type: entity_reference_autocomplete
-    weight: 2
+    weight: 3
     region: content
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
-    third_party_settings: {  }
-  field_event_search_date:
-    type: datetime_default
-    weight: 27
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_event_sort_date:
-    type: datetime_default
-    weight: 28
-    region: content
-    settings: {  }
     third_party_settings: {  }
   field_event_type:
     type: entity_reference_autocomplete
@@ -93,25 +101,25 @@ content:
     third_party_settings: {  }
   field_location:
     type: address_default
-    weight: 3
+    weight: 4
     region: content
     settings:
       wrapper_type: fieldset
     third_party_settings: {  }
   path:
     type: path
-    weight: 9
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
   simple_sitemap:
-    weight: 8
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 7
+    weight: 8
     region: content
     settings:
       display_label: true
@@ -126,7 +134,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 6
     region: content
     settings:
       match_operator: CONTAINS
@@ -135,6 +143,8 @@ content:
       placeholder: ''
     third_party_settings: {  }
 hidden:
+  field_event_search_date: true
+  field_event_sort_date: true
   field_geolocation: true
   promote: true
   sticky: true
