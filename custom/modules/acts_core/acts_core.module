@@ -5,6 +5,7 @@
  * Contains hook implementations for the ACTS Core module.
  */
 
+use Drupal\Core\Datetime\DrupalDateTime;
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Form\FormStateInterface;
 
@@ -71,7 +72,7 @@ function acts_core_node_presave(EntityInterface $node) {
         ->format('Y-m-d') : NULL;
     $node
       ->get('field_event_sort_date')
-      ->setValue($first_sort_date);
+      ->setValue($sort_date);
 
     $date_min =
       $date_min_timestamp ? DrupalDateTime::createFromTimestamp($date_min_timestamp)
