@@ -1,5 +1,9 @@
 dockworker:
   version: '6'
+  drupal:
+    schemas:
+      ignore_enforcement:
+        - core.entity_form_display.node.event.default
   application:
     name: ACTS - Atlantic Canada Theatre Site
     uri: https://acts.lib.unb.ca
