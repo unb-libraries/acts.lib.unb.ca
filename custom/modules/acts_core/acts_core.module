@@ -36,6 +36,56 @@ function acts_core_node_presave(EntityInterface $node) {
     }
     $node->setTitle(trim(implode(' ', $title)));
   }
+  elseif ($node->bundle() == 'event') {
+    $event_daterange = $node
+      ->get('field_event_date')
+      ->getString();
+    $event_date_arr = explode(',', $event_daterange);
+    $event_start_date = $event_date_arr[0];
+    $event_end_date = count($event_date_arr) < 2 ? NULL : $event_date_arr[1];
+
+    // Remove dates entered prior setting 'Event Date is' to 'None'.
+    $event_date_type = $node
+      ->get('field_event_date_type')
+      ->getString();
+    switch ($event_date_type) {
+      case 'exact':
+        $blank_the_fields[] = "field_event_display_date";
+        $sort_timestamp = $date_min_timestamp = strtotime($event_start_date);
+        break;
+
+      case 'approximate':
+        $sort_timestamp = (strtotime($event_start_date) + strtotime($event_end_date)) / 2;
+        $date_min_timestamp = strtotime($event_start_date);
+        break;
+
+      default:
+        $blank_the_fields[] = "field_event_date";
+        $blank_the_fields[] = "field_event_display_date";
+        $sort_timestamp = $date_min_timestamp = NULL;
+      }
+
+    // $sort_timestamp == false if strtotime invalid format, i.e. null.
+    $sort_date =
+      $sort_timestamp ? DrupalDateTime::createFromTimestamp($sort_timestamp)
+        ->format('Y-m-d') : NULL;
+    $node
+      ->get('field_event_sort_date')
+      ->setValue($first_sort_date);
+
+    $date_min =
+      $date_min_timestamp ? DrupalDateTime::createFromTimestamp($date_min_timestamp)
+        ->format('Y-m-d') : NULL;
+    $node
+      ->get('field_event_search_date')
+      ->setValue($date_min);
+
+    if (!empty($blank_the_fields)) {
+      foreach ($blank_the_fields as $f) {
+        $node->get($f)->setValue(NULL);
+      }
+    }
+  }
 }
 
 /**
