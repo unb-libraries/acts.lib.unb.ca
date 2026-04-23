@@ -14,6 +14,7 @@ dependencies:
   module:
     - address
     - geofield
+    - inline_entity_form
     - path
     - text
 id: node.company.default
@@ -52,14 +53,22 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_event_role:
-    type: entity_reference_autocomplete
+    type: inline_entity_form_complex
     weight: 4
     region: content
     settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Role
+      label_plural: Roles
+      allow_new: true
+      allow_existing: true
       match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+      removed_reference: optional
     third_party_settings: {  }
   field_geolocation:
     type: geofield_latlon
