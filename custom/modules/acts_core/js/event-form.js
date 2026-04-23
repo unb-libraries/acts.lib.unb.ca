@@ -19,17 +19,16 @@ function eventDateRange() {
         /**
          * Clear the end date widget when Approximate is NOT selected.
          */
-//        jQuery("#edit-field-event-date-0-end-value-date").datepicker("setDate", null).val('');
+        jQuery("#edit-field-event-date-0-end-value-date").val('');
         /**
          * Clear the start date widget when Exact is NOT selected.
          */
         if (jQuery("#edit-field-event-date-type").val() != 'exact') {
-//            jQuery("#edit-field-event-date-0-value-date").datepicker("setDate", null).val('');
+            jQuery("#edit-field-event-date-0-value-date").val('');
         }
         jQuery("#edit-field-event-date-0 .form-datetime-wrapper:nth-child(2) .form-item__label").removeClass("form-required");
         jQuery("#edit-field-event-date-0 .form-datetime-wrapper:nth-child(2)").slideUp(200);
         jQuery("#edit-field-event-date-0 .fieldset__description").slideUp(200);
-        // jQuery("#edit-field-event-date-wrapper .alert-danger").slideUp();
     }
 }
 
