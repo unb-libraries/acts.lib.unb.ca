@@ -68,8 +68,13 @@
       "themes/custom/{$name}": [
         "type:drupal-custom-theme"
       ]
+    },
+    "patches": {
+      "drupal/core": {
+        "Extend Daterange functionality": "https://www.drupal.org/files/issues/2024-06-26/2794481-262.patch"
+      }
     }
- },
+  },
   "license": "MIT",
   "minimum-stability": "dev",
   "name": "unb-libraries/acts.lib.unb.ca",
