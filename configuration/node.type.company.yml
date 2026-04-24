@@ -10,7 +10,7 @@ third_party_settings:
     parent: ''
 name: Company
 type: company
-description: null
+description: 'An organization that produces theatrical performances'
 help: null
 new_revision: true
 preview_mode: 1

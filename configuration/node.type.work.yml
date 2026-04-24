@@ -10,7 +10,7 @@ third_party_settings:
     parent: ''
 name: Work
 type: work
-description: null
+description: 'The artistic output of an author (eg a play)'
 help: null
 new_revision: true
 preview_mode: 1

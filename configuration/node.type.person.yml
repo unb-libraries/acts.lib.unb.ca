@@ -10,7 +10,7 @@ third_party_settings:
     parent: ''
 name: Person
 type: person
-description: null
+description: 'An individual'
 help: null
 new_revision: true
 preview_mode: 1

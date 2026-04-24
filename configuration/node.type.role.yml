@@ -10,7 +10,7 @@ third_party_settings:
     parent: ''
 name: Role
 type: role
-description: null
+description: 'Links a Person to a duty/position (author of, director of, etc)'
 help: null
 new_revision: true
 preview_mode: 1

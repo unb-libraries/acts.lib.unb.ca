@@ -10,7 +10,7 @@ third_party_settings:
     parent: ''
 name: Theatre
 type: theatre
-description: null
+description: 'A physical building'
 help: null
 new_revision: true
 preview_mode: 1
