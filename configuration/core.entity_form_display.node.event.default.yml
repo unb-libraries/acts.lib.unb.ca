@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.event.field_gallery
     - field.field.node.event.field_geolocation
     - field.field.node.event.field_location
+    - field.field.node.event.field_old_acts_id
     - image.style.thumbnail
     - node.type.event
   module:
@@ -235,5 +236,6 @@ hidden:
   field_event_search_date: true
   field_event_sort_date: true
   field_geolocation: true
+  field_old_acts_id: true
   promote: true
   sticky: true

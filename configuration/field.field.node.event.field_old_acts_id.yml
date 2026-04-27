@@ -1,0 +1,19 @@
+uuid: 2bb93a89-b01b-4186-93bc-1ab2830b0444
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_old_acts_id
+    - node.type.event
+id: node.event.field_old_acts_id
+field_name: field_old_acts_id
+entity_type: node
+bundle: event
+label: old_acts_id
+description: 'ID number from the old DB'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
