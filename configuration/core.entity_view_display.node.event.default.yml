@@ -15,6 +15,8 @@ dependencies:
     - field.field.node.event.field_geolocation
     - field.field.node.event.field_location
     - field.field.node.event.field_old_acts_id
+    - field.field.node.event.field_reference_source
+    - field.field.node.event.field_reference_source_url
     - node.type.event
   module:
     - address
@@ -22,6 +24,7 @@ dependencies:
     - datetime_range
     - geofield
     - image
+    - link
     - options
     - text
     - user
@@ -131,6 +134,26 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 116
+    region: content
+  field_reference_source:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 117
+    region: content
+  field_reference_source_url:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 118
     region: content
   links:
     settings: {  }
