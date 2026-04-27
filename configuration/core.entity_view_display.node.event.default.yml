@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.event.field_event_search_date
     - field.field.node.event.field_event_sort_date
     - field.field.node.event.field_event_type
+    - field.field.node.event.field_gallery
     - field.field.node.event.field_geolocation
     - field.field.node.event.field_location
     - node.type.event
@@ -19,6 +20,7 @@ dependencies:
     - datetime
     - datetime_range
     - geofield
+    - image
     - options
     - text
     - user
@@ -93,6 +95,17 @@ content:
       link: true
     third_party_settings: {  }
     weight: 102
+    region: content
+  field_gallery:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 115
     region: content
   field_geolocation:
     type: geofield_default

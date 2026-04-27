@@ -11,14 +11,17 @@ dependencies:
     - field.field.node.event.field_event_search_date
     - field.field.node.event.field_event_sort_date
     - field.field.node.event.field_event_type
+    - field.field.node.event.field_gallery
     - field.field.node.event.field_geolocation
     - field.field.node.event.field_location
+    - image.style.thumbnail
     - node.type.event
   module:
     - address
     - conditional_fields
     - datetime_range
     - field_group
+    - image
     - inline_entity_form
     - path
     - text
@@ -49,13 +52,13 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 7
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
   field_annotation:
     type: text_textarea
-    weight: 5
+    weight: 6
     region: content
     settings:
       rows: 5
@@ -171,6 +174,14 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_gallery:
+    type: image_image
+    weight: 5
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
   field_location:
     type: address_default
     weight: 4
@@ -186,18 +197,18 @@ content:
       conditional_fields: {  }
   path:
     type: path
-    weight: 10
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }
   simple_sitemap:
-    weight: 9
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 8
+    weight: 9
     region: content
     settings:
       display_label: true
@@ -212,7 +223,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 6
+    weight: 7
     region: content
     settings:
       match_operator: CONTAINS
