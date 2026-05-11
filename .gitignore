@@ -1,0 +1,7 @@
+/vendor/
+/composer.lock
+.dockworker/dockworker.persistent.yml
+.idea/
+.vscode/
+*.swp
+.DS_Store

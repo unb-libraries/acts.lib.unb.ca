@@ -1,0 +1,20 @@
+name: Build, Push, Deploy
+on:
+  pull_request:
+  push:
+  workflow_dispatch:
+jobs:
+  build-push-deploy-notify:
+    uses: unb-libraries/dockworker/.github/workflows/build-push-deploy-notify.yaml@6.x
+    with:
+      build-themes: false
+      image-name: ghcr.io/unb-libraries/acts.lib.unb.ca
+      k8s-deployment-name: acts-lib-unb-ca
+      push-branches: '["newacts"]'
+      deploy-branches: '["newacts"]'
+      branch-env-map: '{"newacts":"prod"}'
+    secrets:
+      KUBE_CONFIG: ${{ secrets.KUBE_CONFIG_DATA }}
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+      GH_CONTAINER_REGISTRY_USER: ${{ secrets.GH_CONTAINER_REGISTRY_USER }}
+      GH_CONTAINER_REGISTRY_TOKEN: ${{ secrets.GH_CONTAINER_REGISTRY_TOKEN }}

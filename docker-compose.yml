@@ -1,0 +1,15 @@
+services:
+  acts-lib-unb-ca:
+    build:
+      context: .
+    restart: unless-stopped
+    container_name: acts-lib-unb-ca
+    expose:
+      - "80"
+    ports:
+      - "3092:80"
+    networks:
+      - acts.lib.unb.ca
+networks:
+  acts.lib.unb.ca:
+    name: acts.lib.unb.ca

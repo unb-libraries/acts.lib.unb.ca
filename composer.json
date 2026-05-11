@@ -1,0 +1,24 @@
+{
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "php-http/discovery": true
+    },
+    "preferred-install": {
+      "*": "dist"
+    }
+  },
+  "description": "Static one-pager scaffold for acts.lib.unb.ca",
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "name": "unb-libraries/acts.lib.unb.ca",
+  "prefer-stable": true,
+  "require-dev": {
+    "unb-libraries/dockworker-daemon": "^6"
+  },
+  "scripts": {
+    "post-update-cmd": [
+      "vendor/bin/dockworker git:setup-hooks"
+    ]
+  }
+}

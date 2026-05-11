@@ -1,0 +1,4 @@
+services:
+  acts-lib-unb-ca:
+    volumes:
+      - ./html:/app/html:ro

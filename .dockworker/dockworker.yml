@@ -1,0 +1,49 @@
+dockworker:
+  version: '6'
+  application:
+    name: ACTS - Atlantic Canada Theatre Site
+    uri: https://acts.lib.unb.ca
+    description: >
+      Atlantic Canada Theatre Site (static one-pager)
+    topics:
+      - theatre
+      - research
+    identifiers:
+      id: acts.lib.unb.ca
+      slug: acts-lib-unb-ca
+      short_slug: acts
+      uuid: 3092
+    framework:
+      name: Daemon
+      startup_finished_marker: '99_startup_sequence_complete'
+      endpoint:
+        name: http
+        port: 80
+        readiness_timeout: 5
+    license:
+      license: MIT
+      holder: University of New Brunswick Libraries
+    shell:
+      path: /bin/sh
+  endpoints:
+    env:
+      - dev
+    deployments:
+      acts-lib-unb-ca:
+        default: true
+        managed: true
+        name: acts-lib-unb-ca
+  workflows:
+    vcs:
+      type: github
+      owner: unb-libraries
+      name: acts.lib.unb.ca
+    jira:
+      project_keys:
+        - ACTS
+    image:
+      name: ghcr.io/unb-libraries/acts.lib.unb.ca
+      parent: ghcr.io/unb-libraries/nginx:3.18.x
+      repository: GitHub
+      push-branches:
+        - newacts
