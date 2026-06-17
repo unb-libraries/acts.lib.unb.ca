@@ -1,0 +1,16 @@
+// Bootstrap overridden variables / subtheme styling.
+// @see https://getbootstrap.com/docs/5.2/customize/sass/#variable-defaults.
+@import 'variables_drupal';
+
+// Include Bootstrap framework.
+@import '../../../../../vendor/drupal/bootstrap5/scss/style';
+
+// Include Drupal subtheme variables.
+@import 'variables_post_bootstrap';
+
+// Include subtheme.
+@import 'imports';
+
+header {
+    background: url('../../img/header-background.png');
+}

@@ -1,4 +1,6 @@
 global-styling:
   css:
     theme:
-      css/style.css: {}
+      dist/css/style.css:  { minified: true }
+  js:
+    dist/js/global.js: {}

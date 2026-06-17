@@ -1,0 +1,27 @@
+.breadcrumb {
+    display: flex;
+
+    .breadcrumb-item {
+        text-transform: uppercase;
+
+        .breadcrumb-item:not(:first-child):not(:last-child) {
+            padding: 0 $spacer * 1.5;
+        }
+
+        a {
+            display: flex;
+            text-decoration: none;
+
+            &[href="/"] {
+                &::before {
+                    background-image: url(/themes/custom/acts/img/home-icon.svg);
+                    content: '';
+                    display: inline-block;
+                    margin-right: $spacer * 0.25;
+                    width: 22px;
+                    height: 25px;
+                }
+            }
+        }
+    }
+}
