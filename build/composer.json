@@ -93,6 +93,7 @@
     "drupal/core": "^11",
     "drupal/core-composer-scaffold": "^11",
     "drupal/core-recommended": "^11",
+    "drupal/easy_breadcrumb": "^2.0",
     "drupal/facets": "^3",
     "drupal/field_group": "^4.0",
     "drupal/geocoder": "^4.31",

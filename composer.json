@@ -13,7 +13,14 @@
   "minimum-stability": "dev",
   "name": "unb-libraries/acts.lib.unb.ca",
   "prefer-stable": true,
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    }
+  ],
   "require-dev": {
+    "drupal/bootstrap5": "^4",
     "unb-libraries/dockworker-drupal": "^6"
   },
   "scripts": {
