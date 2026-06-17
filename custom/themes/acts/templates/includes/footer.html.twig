@@ -1,0 +1,18 @@
+<footer role="contentinfo" class="{{- footer_classes -}} mt-auto flex-column">
+    <div class="{{ b5_top_container }}">
+        {{ page.footer }}
+    </div>
+    <div id="footer-middle" class="d-flex align-items-end">
+        <div id="acts-fisherman" class="flex-grow-1">
+            <div> {% include '@acts/includes/acts-fisherman.html.twig' %}</div>
+        </div>    
+        <div id="affiliate-logos" class="d-flex flex-column flex-lg-row align-items-center column-gap-5 justify-content-between row-gap-3 mb-3">
+            <div> {% include '@acts/includes/unb-libraries-logo.html.twig' %}</div>
+            <div> {% include '@acts/includes/st-thomas-logo.html.twig' %}</div>
+            <div> {% include '@acts/includes/st-fx-logo.html.twig' %}</div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center justify-content-md-end my-3">
+        {{ 'Copyright'|t }} &copy; {{ 'now' | date('Y') }}
+    </div>
+</footer>
