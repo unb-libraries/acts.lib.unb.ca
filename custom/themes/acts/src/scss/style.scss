@@ -15,6 +15,11 @@ header {
     background: url('../../img/header-background.png');
 }
 
-a {
+a,
+a g {
     transition: all $transition-speed $transition-timing;
+
+    &:focus-visible {
+        text-decoration: none;
+    }
 }

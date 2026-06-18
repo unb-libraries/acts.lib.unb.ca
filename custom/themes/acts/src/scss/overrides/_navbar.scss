@@ -15,7 +15,7 @@
         border-color: transparent;
         text-transform: uppercase;
 
-        &:focus {
+        &:focus-visible {
             color: $link-hover-color; 
         }
         &:hover {
@@ -31,7 +31,7 @@
         fill: $white-linen;
     }
 
-    &:focus,
+    &:focus-visible,
     &:hover {
         .logo-acronym {
             fill: $link-hover-color;
@@ -45,5 +45,14 @@
 
 .navbar-toggler {
     background: $white-linen;
+    transition: all $transition-speed $transition-timing;
+
+    &:focus-visible {
+        box-shadow: 0 0 0 2px $white-linen;
+    }
+    &:focus-visible,
+    &:hover {
+        background: $accent-40;
+    }
 }
 
