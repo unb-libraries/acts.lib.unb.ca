@@ -14,3 +14,7 @@
 header {
     background: url('../../img/header-background.png');
 }
+
+a {
+    transition: all $transition-speed $transition-timing;
+}

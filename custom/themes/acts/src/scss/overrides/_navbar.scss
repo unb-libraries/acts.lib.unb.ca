@@ -8,12 +8,42 @@
     top: 0;
     z-index: 99;
 
-    a.nav-link {
+    .nav-link {
         color: $secondary-20;
+        border-width: 1px;
+        border-style: solid;
+        border-color: transparent;
         text-transform: uppercase;
+
+        &:focus {
+            color: $link-hover-color; 
+        }
+        &:hover {
+            color: $link-hover-color;
+            border-color: rgba(108, 233, 255, 0.3);
+        }
+    }
+}
+
+.site-logo {
+    .logo-acronym {
+
+        fill: $white-linen;
+    }
+
+    &:focus,
+    &:hover {
+        .logo-acronym {
+            fill: $link-hover-color;
+        }
+    }
+
+    .logo-phrase {
+        fill: $secondary-20;
     }
 }
 
 .navbar-toggler {
-    background: $white;
+    background: $white-linen;
 }
+
