@@ -5,5 +5,9 @@ $container-spacer: $spacer * 1.5;
 $footer-padding: $spacer * 2 0 !default;
 $local-tasks-primary-margin: $spacer 0 !default;
 $local-tasks-secondary-margin: 0 0 $spacer 0 !default;
-$trans-timing-duration: 0.3s;
-$trans-timing-function: ease-in-out;
+$transition-speed: 0.3s;
+$transition-timing: ease-in-out;
+
+:root {
+    --bs-body-bg: #f7f9f0;
+}

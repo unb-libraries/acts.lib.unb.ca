@@ -7,3 +7,15 @@ footer {
     border-bottom-style: solid;
     border-bottom-width: 1px;
 }
+
+#affiliate-logos {
+    a {
+        border: 1px solid transparent;
+        display: inline-block;
+        padding: 2px;
+
+        &:hover {
+            border-color: $primary-60;
+        }
+    }
+}

@@ -28,7 +28,7 @@
 .site-logo {
     .logo-acronym {
 
-        fill: $white-linen;
+        fill: $base-bg;
     }
 
     &:focus-visible,
@@ -44,11 +44,11 @@
 }
 
 .navbar-toggler {
-    background: $white-linen;
+    background: $base-bg;
     transition: all $transition-speed $transition-timing;
 
     &:focus-visible {
-        box-shadow: 0 0 0 2px $white-linen;
+        box-shadow: 0 0 0 2px $base-bg;
     }
     &:focus-visible,
     &:hover {

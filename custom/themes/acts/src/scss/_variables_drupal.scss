@@ -1,33 +1,10 @@
-// Theme variables.
-
-$navbar-brand-image-height: 36px !default;
-$navbar-brand-image-height-lg: 60px !default;
-$navbar-brand-image-width: auto !default;
-$navbar-brand-image-margin: 0 1rem 0 0 !default;
-
-$navbar-brand-site-title-text-transform: uppercase !default;
-$navbar-brand-site-title-font-size: 1.5rem !default;
-$navbar-brand-site-title-font-weight: bold !default;
-$navbar-brand-site-title-letter-spacing: 2px !default;
-$navbar-brand-site-slogan-font-size: .875rem !default;
-
-$region-padding: 0 .5rem !default;
-
-$footer-padding: 2rem 0 !default;
-
-$nav-tabs-link-active-bg-sm: #dee2e6 !default;
-
-$local-tasks-primary-margin: 1rem 0 !default;
-$local-tasks-secondary-margin: 0 0 1rem 0 !default;
-
-$table-striped-bg: #f9f9f9 !default;
-
 // Figma colors.
 $accent-40: #F3D5B3;
 $accent-60: #DCD3D0;
 $accent-80: #F3DDD4;
 $accent-100: #DAD8BD;
 $accent-hover: #6e0836;
+$base-bg: #f7f9f0;
 $neutral-20: #DFDEDA;
 $neutral-30: #C5C5C5;
 $neutral-40: #AAADAF;
@@ -48,8 +25,22 @@ $supporting-20: #F3DDD4;
 $supporting-40: #F3D5B3;
 $supporting-60: #DAD8BD;
 $supporting-80: #DCD3D0;
-$white-linen: #f7f9f0;
 
+// Theme variables.
+$footer-padding: 2rem 0 !default;
 $link-hover-color: $primary-40;
-$transition-speed: 0.3s;
-$transition-timing: ease-in-out;
+$local-tasks-primary-margin: 1rem 0 !default;
+$local-tasks-secondary-margin: 0 0 1rem 0 !default;
+$nav-tabs-link-active-bg-sm: #dee2e6 !default;
+$navbar-brand-image-height: 36px !default;
+$navbar-brand-image-height-lg: 60px !default;
+$navbar-brand-image-width: auto !default;
+$navbar-brand-image-margin: 0 1rem 0 0 !default;
+$navbar-brand-site-title-text-transform: uppercase !default;
+$navbar-brand-site-title-font-size: 1.5rem !default;
+$navbar-brand-site-title-font-weight: bold !default;
+$navbar-brand-site-title-letter-spacing: 2px !default;
+$navbar-brand-site-slogan-font-size: .875rem !default;
+$nav-tabs-link-active-bg-sm: #dee2e6 !default;
+$region-padding: 0 .5rem !default;
+$table-striped-bg: #f9f9f9 !default;
