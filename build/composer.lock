@@ -1578,10 +1578,10 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/conditional_fields.git",
-                "reference": "5a0fef0f83d9395371cc707aed52033a5fce355a"
+                "reference": "40017ea2d9806b480bb157a8ed0ffefd785c2926"
             },
             "require": {
-                "drupal/core": "^9 || ^10 || ^11"
+                "drupal/core": "^10.3 || ^11"
             },
             "require-dev": {
                 "drupal/entity_reference_revisions": "1.x-dev",
@@ -1593,8 +1593,8 @@
                     "dev-4.x": "4.x-dev"
                 },
                 "drupal": {
-                    "version": "4.0.0-alpha6+6-dev",
-                    "datestamp": "1776836995",
+                    "version": "4.0.0-alpha6+8-dev",
+                    "datestamp": "1786860771",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -1637,10 +1637,6 @@
                 {
                     "name": "joelpittet",
                     "homepage": "https://www.drupal.org/user/160302"
-                },
-                {
-                    "name": "mparker17",
-                    "homepage": "https://www.drupal.org/user/536298"
                 },
                 {
                     "name": "OlgaRabodzei",
