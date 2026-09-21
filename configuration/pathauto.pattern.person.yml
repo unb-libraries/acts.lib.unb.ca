@@ -12,11 +12,11 @@ selection_criteria:
   6cc502cb-c67d-479b-b207-d03e3e5c3521:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 6cc502cb-c67d-479b-b207-d03e3e5c3521
     context_mapping:
       node: node
     bundles:
       person: person
+    uuid: 6cc502cb-c67d-479b-b207-d03e3e5c3521
 selection_logic: and
 weight: -5
 relationships: {  }

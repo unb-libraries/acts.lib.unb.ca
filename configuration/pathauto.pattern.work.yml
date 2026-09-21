@@ -12,11 +12,11 @@ selection_criteria:
   61791de3-c8a7-4e45-bab0-551fdae4e24f:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 61791de3-c8a7-4e45-bab0-551fdae4e24f
     context_mapping:
       node: node
     bundles:
       work: work
+    uuid: 61791de3-c8a7-4e45-bab0-551fdae4e24f
 selection_logic: and
 weight: -5
 relationships: {  }

@@ -12,11 +12,11 @@ selection_criteria:
   988dfa24-7bdd-4f72-b435-6ce1aada848d:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 988dfa24-7bdd-4f72-b435-6ce1aada848d
     context_mapping:
       node: node
     bundles:
       theatre: theatre
+    uuid: 988dfa24-7bdd-4f72-b435-6ce1aada848d
 selection_logic: and
 weight: -5
 relationships: {  }

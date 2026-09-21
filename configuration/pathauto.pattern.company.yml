@@ -12,11 +12,11 @@ selection_criteria:
   1707797f-f56c-4173-86da-e6b9b676b6cf:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 1707797f-f56c-4173-86da-e6b9b676b6cf
     context_mapping:
       node: node
     bundles:
       company: company
+    uuid: 1707797f-f56c-4173-86da-e6b9b676b6cf
 selection_logic: and
 weight: -5
 relationships: {  }
