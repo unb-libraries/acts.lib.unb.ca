@@ -98,6 +98,16 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_annotation
+  search_company:
+    label: 'Company » Content » Title'
+    datasource_id: 'entity:node'
+    property_path: 'field_company:entity:title'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_company
+      module:
+        - node
   search_event_type:
     label: 'Event Type » Taxonomy term » Name'
     datasource_id: 'entity:node'
@@ -118,16 +128,6 @@ field_settings:
         - field.storage.node.field_location
       module:
         - address
-  search_company:
-    label: 'Company » Content » Title'
-    datasource_id: 'entity:node'
-    property_path: 'field_company:entity:title'
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_company
-      module:
-        - node
   search_person:
     label: 'Event Role » Role » Role Person » Content » Title'
     datasource_id: 'entity:node'

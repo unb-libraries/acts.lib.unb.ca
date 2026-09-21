@@ -84,6 +84,33 @@
     {
       "type": "composer",
       "url": "https://packages.drupal.org/8"
+    },
+    {
+      "package": {
+        "dist": {
+          "type": "zip",
+          "url": "https://github.com/furf/jquery-ui-touch-punch/archive/refs/heads/master.zip"
+        },
+        "name": "furf/jquery-ui-touch-punch",
+        "type": "drupal-library",
+        "version": "dev-master"
+      },
+      "type": "package"
+    },
+    {
+      "package": {
+        "dist": {
+          "type": "zip",
+          "url": "https://github.com/simeydotme/jQuery-ui-Slider-Pips/archive/refs/tags/2.0.0.zip"
+        },
+        "name": "simeydotme/jquery-ui-slider-pips",
+        "require": {
+          "composer/installers": "^2"
+        },
+        "type": "drupal-library",
+        "version": "2.0.0"
+      },
+      "type": "package"
     }
   ],
   "require": {
@@ -102,13 +129,18 @@
     "drupal/google_analytics": "^4",
     "drupal/health_check": "^3",
     "drupal/inline_entity_form": "^3.0@RC",
+    "drupal/jquery_ui": "^1",
+    "drupal/jquery_ui_slider": "^2",
+    "drupal/jquery_ui_touch_punch": "^1",
     "drupal/override_node_options": "^2",
     "drupal/pathauto": "^1",
     "drupal/redis": "^1",
     "drupal/search_api": "^1",
     "drupal/search_api_solr": "^4",
     "drupal/simple_sitemap": "^4",
+    "furf/jquery-ui-touch-punch": "dev-master",
     "geocoder-php/nominatim-provider": "^5.8",
+    "simeydotme/jquery-ui-slider-pips": "^2",
     "unb-libraries/composer-drupal-scaffold": "^11.x-dev",
     "willdurand/geocoder": "^5"
   },
