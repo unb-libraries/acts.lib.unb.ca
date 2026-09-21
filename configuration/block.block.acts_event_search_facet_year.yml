@@ -1,0 +1,29 @@
+uuid: 0cbefadc-1ebb-48cb-a01a-0d117bdf7694
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.event_year
+  module:
+    - facets
+    - system
+  theme:
+    - acts
+id: acts_event_search_facet_year
+theme: acts
+region: sidebar_first
+weight: -10
+provider: null
+plugin: 'facet_block:event_year'
+settings:
+  id: 'facet_block:event_year'
+  label: 'Event Year'
+  label_display: '0'
+  provider: facets
+  context_mapping: {  }
+  block_id: acts_event_search_facet_year
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/search\r\n/search?*"
