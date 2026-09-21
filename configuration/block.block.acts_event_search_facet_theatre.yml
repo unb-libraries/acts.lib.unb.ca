@@ -1,0 +1,29 @@
+uuid: 95a25085-119b-489b-99b5-33e7d8e4b408
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.event_theatre
+  module:
+    - facets
+    - system
+  theme:
+    - acts
+id: acts_event_search_facet_theatre
+theme: acts
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'facet_block:event_theatre'
+settings:
+  id: 'facet_block:event_theatre'
+  label: Theatre
+  label_display: '0'
+  provider: facets
+  context_mapping: {  }
+  block_id: acts_event_search_facet_theatre
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/search\r\n/search?*"

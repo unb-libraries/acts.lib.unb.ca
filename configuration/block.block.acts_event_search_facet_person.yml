@@ -1,0 +1,29 @@
+uuid: 91be5e43-c87d-4820-9bdc-45a986e4f3a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.event_person
+  module:
+    - facets
+    - system
+  theme:
+    - acts
+id: acts_event_search_facet_person
+theme: acts
+region: sidebar_first
+weight: -5
+provider: null
+plugin: 'facet_block:event_person'
+settings:
+  id: 'facet_block:event_person'
+  label: Person
+  label_display: '0'
+  provider: facets
+  context_mapping: {  }
+  block_id: acts_event_search_facet_person
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/search\r\n/search?*"

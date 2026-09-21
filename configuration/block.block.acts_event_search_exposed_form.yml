@@ -1,0 +1,28 @@
+uuid: 96ecff9f-d3a5-422d-b8c3-c0900e4f6c4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.event_search
+  module:
+    - system
+    - views
+  theme:
+    - acts
+id: acts_event_search_exposed_form
+theme: acts
+region: content
+weight: -2
+provider: null
+plugin: 'views_exposed_filter_block:event_search-page_1'
+settings:
+  id: 'views_exposed_filter_block:event_search-page_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/search\r\n/search?*"

@@ -1,0 +1,29 @@
+uuid: 058393a5-2503-4a90-933d-eeaf538d1357
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_theatre
+    - node.type.event
+    - node.type.theatre
+id: node.event.field_theatre
+field_name: field_theatre
+entity_type: node
+bundle: event
+label: Theatre
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      theatre: theatre
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

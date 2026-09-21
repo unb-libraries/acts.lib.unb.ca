@@ -1,0 +1,29 @@
+uuid: 377c008c-6705-4d51-8909-5b9328c1d5ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.event_work
+  module:
+    - facets
+    - system
+  theme:
+    - acts
+id: acts_event_search_facet_work
+theme: acts
+region: sidebar_first
+weight: -6
+provider: null
+plugin: 'facet_block:event_work'
+settings:
+  id: 'facet_block:event_work'
+  label: Work
+  label_display: '0'
+  provider: facets
+  context_mapping: {  }
+  block_id: acts_event_search_facet_work
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/search\r\n/search?*"

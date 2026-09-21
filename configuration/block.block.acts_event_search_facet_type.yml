@@ -1,0 +1,29 @@
+uuid: 52752289-d12c-43f1-b25a-5f048cb3a291
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.event_type
+  module:
+    - facets
+    - system
+  theme:
+    - acts
+id: acts_event_search_facet_type
+theme: acts
+region: sidebar_first
+weight: -9
+provider: null
+plugin: 'facet_block:event_type'
+settings:
+  id: 'facet_block:event_type'
+  label: 'Event Type'
+  label_display: '0'
+  provider: facets
+  context_mapping: {  }
+  block_id: acts_event_search_facet_type
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/search\r\n/search?*"

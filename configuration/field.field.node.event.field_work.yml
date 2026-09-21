@@ -1,0 +1,29 @@
+uuid: 6fdd0946-d72a-41d9-8d95-6ddfc8645286
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_work
+    - node.type.event
+    - node.type.work
+id: node.event.field_work
+field_name: field_work
+entity_type: node
+bundle: event
+label: Work
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      work: work
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

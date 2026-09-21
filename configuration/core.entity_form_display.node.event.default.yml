@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.event.field_annotation
+    - field.field.node.event.field_company
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_date_type
     - field.field.node.event.field_event_display_date
@@ -17,6 +18,8 @@ dependencies:
     - field.field.node.event.field_old_acts_id
     - field.field.node.event.field_reference_source
     - field.field.node.event.field_reference_source_url
+    - field.field.node.event.field_theatre
+    - field.field.node.event.field_work
     - image.style.thumbnail
     - node.type.event
   module:
@@ -66,6 +69,16 @@ content:
     region: content
     settings:
       rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_company:
+    type: entity_reference_autocomplete
+    weight: 29
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
       placeholder: ''
     third_party_settings: {  }
   field_event_date:
@@ -208,6 +221,26 @@ content:
     settings:
       placeholder_url: ''
       placeholder_title: ''
+    third_party_settings: {  }
+  field_theatre:
+    type: entity_reference_autocomplete
+    weight: 30
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_work:
+    type: entity_reference_autocomplete
+    weight: 31
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   group_event_date:
     weight: 26

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.event.field_annotation
+    - field.field.node.event.field_company
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_date_type
     - field.field.node.event.field_event_display_date
@@ -17,6 +18,8 @@ dependencies:
     - field.field.node.event.field_old_acts_id
     - field.field.node.event.field_reference_source
     - field.field.node.event.field_reference_source_url
+    - field.field.node.event.field_theatre
+    - field.field.node.event.field_work
     - node.type.event
   module:
     - address
@@ -39,6 +42,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 106
+    region: content
+  field_company:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
     region: content
   field_event_date:
     type: daterange_default
@@ -154,6 +165,22 @@ content:
       target: ''
     third_party_settings: {  }
     weight: 118
+    region: content
+  field_theatre:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_work:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
     region: content
   links:
     settings: {  }

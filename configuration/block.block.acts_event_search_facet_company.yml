@@ -1,0 +1,29 @@
+uuid: bf4e1bff-b619-4964-8825-8f9fae7e2039
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.event_company
+  module:
+    - facets
+    - system
+  theme:
+    - acts
+id: acts_event_search_facet_company
+theme: acts
+region: sidebar_first
+weight: -8
+provider: null
+plugin: 'facet_block:event_company'
+settings:
+  id: 'facet_block:event_company'
+  label: Company
+  label_display: '0'
+  provider: facets
+  context_mapping: {  }
+  block_id: acts_event_search_facet_company
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/search\r\n/search?*"
