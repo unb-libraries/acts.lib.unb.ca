@@ -1,7 +1,7 @@
 FROM ghcr.io/unb-libraries/drupal:11.x-1.x-unblib
 
 # Install additional OS packages.
-ENV ADDITIONAL_OS_PACKAGES="postfix php84-pecl-redis php84-xmlreader php84-zip"
+ENV ADDITIONAL_OS_PACKAGES="postfix php${PHP_VERSION}-pecl-redis php${PHP_VERSION}-xmlreader php${PHP_VERSION}-zip"
 ENV DRUPAL_SITE_ID="acts"
 ENV DRUPAL_SITE_URI="acts.lib.unb.ca"
 ENV DRUPAL_SITE_UUID=981986fa-f8f0-4dff-93a7-4b5996d5653a
