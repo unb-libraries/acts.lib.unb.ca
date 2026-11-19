@@ -1,4 +1,4 @@
-FROM ghcr.io/unb-libraries/nginx:3.18.x
+FROM ghcr.io/unb-libraries/nginx:3.24.x
 
 ENV APP_HOSTNAME="acts.lib.unb.ca"
 

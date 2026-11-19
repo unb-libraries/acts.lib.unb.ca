@@ -43,7 +43,7 @@ dockworker:
         - ACTS
     image:
       name: ghcr.io/unb-libraries/acts.lib.unb.ca
-      parent: ghcr.io/unb-libraries/nginx:3.18.x
+      parent: ghcr.io/unb-libraries/nginx:3.24.x
       repository: GitHub
       push-branches:
         - newacts
